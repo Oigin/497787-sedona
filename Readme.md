@@ -1,7 +1,7 @@
 # Личный проект «Седона»
 
 * Студент: [Yevhenii Skachko](https://up.htmlacademy.ru/htmlcss/19/user/497787).
-* Наставник: `Неизвестно`.
+* Наставник: [Ирина Малиновская](https://htmlacademy.ru/profile/irina-malinovskaya).
 
 ---
 
