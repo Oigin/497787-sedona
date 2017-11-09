@@ -5,31 +5,34 @@
     <title>HTML Academy: Седона</title>
   </head>
   <body>
-  	<div class="wrraper"> 
-  	  	<div class="wrraper-main-header">
-  	  		<a class="main-header-logo" href="index.html">
-  	  			<img src="http://placehold.it/150x100" alt="Логотип «City of Cedona»">
-  	  		</a> 
-  	  		<ul class="wrraper-information">
-  	  			<li><a href="information.html">Информация</a></li>
-  	  			<li><a href="foto-video.html">Фото и видео</a></li>
-  	  			<li><a href="map.html">Карта штата</a></li>
-  	  			<li><a href="hotels.html">Гостоницы</a></li>		
-  	  		</ul>
-  	  	</div>
-        <div class="wrraper-search">
+  	<div class="wraper"> 
+
+        <header class="header">
+          <a class="main-header-logo" href="index.html">
+            <img src="http://placehold.it/150x100"  alt="Логотип «City of Cedona»">
+          </a> 
+          <ul class="information">
+            <li><a href="information.html">Информация</a></li>
+            <li><a href="foto-video.html">Фото и видео</a></li>
+            <li><a href="map.html">Карта штата</a></li>
+            <li><a href="hotels.html">Гостоницы</a></li>    
+          </ul>
+        </header>
+
+
+        <div class="search">
           <ul class="infrastructure">Инфраструктура:
             <li><a href="#">Бассейн</a></li>
             <li><a href="#">Парковка</a></li>
             <li><a href="#">Wi-Fi</a></li>
-          </ul>
+          </ul>         
           <ul class="house-type">Тип жилья:
             <li><a href="#">Гостиница</a></li>
             <li><a href="#">Мотель</a></li> 
             <li><a href="#">Апартаменты</a></li>          
           </ul>
           <!--- Стоимость в сутки, шкала выбора цены --> 
-          <div class="wrraper-search-result">
+          <div class="search-result">
             <h2>Найдено:</h2>
               <ul class="Sorting">Сортировка:
                 <li><a href="#">По цене</a></li>
@@ -37,45 +40,73 @@
                 <li><a href="#">По рейтингу</a></li>
               </ul>            
           </div>
+
+
             <div class="foto-result">
-              <div class="result1">
-                <img src="#" alt="Фото">
-                  <h3>Amara resort & spa</h3>
-                    <p>Гостиница от 3500Р.</p>
+
+              <div class="result">
+                <figure class="result-foto">
+                  <img src="#" alt="Фото">
+                </figure>
+                  <div class="result-text">
+                    <h3>Amara resort & spa</h3>
+                      <p>Гостиница от 3500Р.</p>
                       <a href="#">Подробнее</a>
                       <a href="#">Забронировать</a>
-                        <p>Рейтинг:8.5</p>    
+                  </div>
+                    <div class="rating">
+                      <p>Рейтинг:8.5</p>
+                    </div>    
               </div>
-              <div class="result2">
-                <img src="#" alt="Фото">
-                  <h3>Desert quail inn</h3>
-                    <p>Мотель от 2000Р.</p>
+
+              <div class="result">
+                <figure class="result-foto">
+                  <img src="#" alt="Фото">
+                </figure>
+                  <div class="result-text">
+                    <h3>Desert quail inn</h3>
+                      <p>Мотель от 2000Р.</p>
                       <a href="#">Подробнее</a>
                       <a href="#">Забронировать</a>
-                        <p>Рейтинг:8.9</p>                
+                  </div>
+                    <div class="rating">
+                      <p>Рейтинг:8.9</p>
+                    </div>                
               </div>
-              <div class="result2">
-                <img src="#" alt="Фото">
-                  <h3>Villas at poco diablo</h3>
-                    <p>Апартаменты от 4000Р.</p>
-                      <a href="#">Подробнее</a>
-                      <a href="#">Забронировать</a>
-                        <p>Рейтинг:9.2</p>                
-              </div>             
-            </div>            
+
+              <div class="result">
+                <figure class="result-foto">
+                  <img src="#" alt="Фото">
+                </figure>
+                  <div class="result-text">
+                    <h3>Villas at poco diablo</h3>
+                      <p>Апартаменты от 4000Р.</p>
+                        <a href="#">Подробнее</a>
+                        <a href="#">Забронировать</a>
+                  </div>
+                    <div class="rating">
+                      <p>Рейтинг:9.2</p>
+                    </div>                
+              </div>
+
+            </div> 
+
         </div>
-        <div class="social-footer">
-            <p>#VISITSEDONA</p>
-              <ul>
-                <li><a class="social-button" href="#">Twitter</a></li>
-                <li><a class="social-button" href="#">Facebook</a></li>
-                <li><a class="social-button" href="#">YouTube</a></li>
-              </ul>
-            <div class="copyright-footer">
-              <P>WEBSITE BY</P>
-                <img src="http://placehold.it/150x100" alt="html academy">          
-            </div>  
-          </div>
+
+        <footer class="social-footer">
+              <p>#VISITSEDONA</p>
+                <ul>
+                  <li><a class="social-button" href="#">Twitter</a></li>
+                  <li><a class="social-button" href="#">Facebook</a></li>
+                  <li><a class="social-button" href="#">YouTube</a></li>
+                </ul>
+
+              <footer class="copyright-footer">
+                <p>WEBSITE BY</p>
+                  <img src="http://placehold.it/150x100" alt="html academy">          
+              </footer> 
+            </footer>
+
     </div>
   </body>
 </html>
