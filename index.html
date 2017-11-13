@@ -11,12 +11,12 @@
   	  		<a class="main-header-logo" href="index.html">
   	  			<img src="img/logo.svg" width="138" height="70"  alt="Логотип «City of Cedona»">
   	  		</a> 
-  	  		<ul class="information">
-  	  			<li><a href="information.html">Информация</a></li>
-  	  			<li><a href="foto-video.html">Фото и видео</a></li>
-  	  			<li><a href="map.html">Карта штата</a></li>
-  	  			<li><a href="hotels.html">Гостоницы</a></li>		
-  	  		</ul>
+  	  		<div class="information">
+  	  			<a href="information.html">Информация</a>
+  	  			<a href="foto-video.html">Фото и видео</a>
+  	  			<a href="map.html">Карта штата</a>
+  	  			<a href="hotels.html">Гостоницы</a>		
+  	  		</div>
   	  	</header>
 
       <figure class="main-foto">      		
@@ -43,7 +43,9 @@
       			<div class="services">
       				<div class="services-option">
       					<figure class="small-house">
-      						<img src="img/icon-house.png" width="75" height="72" alt="Картинка домика">
+      					<a href="#">      						
+      						<img src="img/icon-house.png" width="75" height="72" alt="Картинка домика">  
+      					</a>    						
       					</figure>
       						<h3>Жилье</h3>
       					  		<p>Рекомендуем пожить в настоящем мотеле,все как в кино!</p>
@@ -51,7 +53,9 @@
 
       				<div class="services-option">
       					<figure class="small-burger">
+      					<a href="#1">
       						<img src="img/icon-burger.png" width="74" height="70" alt="Картинка бургера">
+      					</a> 
       					</figure> 
       						<h3>Еда</h3>
       							<p>Всегда заказывайте фирменный бургер, вы не разочаруетесь!</p>
@@ -59,7 +63,9 @@
 
       				<div class="services-option">
       					<figure class="small-present">
+      					<a href="#2">
       						<img src="img/icon-present.png" width="64" height="76" alt="Картинка подарка">
+      					</a> 
       					</figure> 
       						<h3>Сувениры</h3>
       					  		<p> Не только китайского, но и местного производства!</p>
@@ -104,21 +110,37 @@
 
       				<div class="search-footer">
       					<p>Поиск гостиницы в седоне</p>
-      					<!--- Поисковая система гостониц -->
+      					 <label>
+      					 	Дата заезда:      					 		
+      					 	<input type="date" name="calendar">     					 		
+      					 </label>
+      					 <label>
+      					 	Дата выезда:
+      					 	<input type="date" name="calendar">
+      					 </label>
+      					 <label>
+      					 	Взрослые:
+      					 	<input list="amount-adult">
+      					 </label> 
+      					 <label>
+      					 	Дети:
+      					 	<input list="amount-child">
+      					 </label> 
+      					 <button class="button-find">
+      					 	Найти
+      					 </button>    					 	      					 
       				</div>
+
 
       			<div class="social-footer">
       				<p>#VISITSEDONA</p>
-      					<ul>
-      						<li><a class="social-button" href="#"><img src="img/twitter.png"></a></li>
-      						<li><a class="social-button" href="#"><img src="img/facebook.png"></a></li>
-      						<li><a class="social-button" href="#"><img src="img/youtube.png"></a></li>
-      					</ul>
-
+      						<a class="social-button" href="#"><img src="img/twitter.png" alt="Твитер"></a>
+      						<a class="social-button" href="#"><img src="img/facebook.png" alt="Фейсбук"></a>
+      						<a class="social-button" href="#"><img src="img/youtube.png" alt="Ютуб"></a>      					
       				<div class="copyright-footer">
       					<p>WEBSITE BY</p>
       						<figure class="academy">
-      							<img src="img/logo_name.svg" width="115" height="41" alt="html academy">
+      							<img src="img/logo_name.svg" width="115" height="41" alt="Логотип html academy">
       						</figure>      			
       				</div>	
       			</div>

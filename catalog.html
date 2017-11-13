@@ -11,34 +11,80 @@
           <a class="main-header-logo" href="index.html">
             <img src="img/logo.svg" width="138" height="70"  alt="Логотип «City of Cedona»">
           </a> 
-          <ul class="information">
-            <li><a href="information.html">Информация</a></li>
-            <li><a href="foto-video.html">Фото и видео</a></li>
-            <li><a href="map.html">Карта штата</a></li>
-            <li><a href="hotels.html">Гостоницы</a></li>    
-          </ul>
+          <div class="information">
+            <a href="information.html">Информация</a>
+            <a href="foto-video.html">Фото и видео</a>
+            <a href="map.html">Карта штата</a>
+            <a href="hotels.html">Гостоницы</a>    
+          </div>
         </header>
 
 
         <div class="search">
-          <ul class="infrastructure">Инфраструктура:
-            <li><a href="#">Бассейн</a></li>
-            <li><a href="#">Парковка</a></li>
-            <li><a href="#">Wi-Fi</a></li>
-          </ul>         
-          <ul class="house-type">Тип жилья:
-            <li><a href="#">Гостиница</a></li>
-            <li><a href="#">Мотель</a></li> 
-            <li><a href="#">Апартаменты</a></li>          
-          </ul>
-          <!--- Стоимость в сутки, шкала выбора цены --> 
+          <figure class="filter_background">
+            <img src="img/filter background.jpg">
+          </figure>
+
+          <div class="infrastructure">Инфраструктура:
+            <form class="filter" method="get" action="#">              
+                <input type="checkbox" name="pool"
+                  id="filter-pool" check>
+                <label for="filter-pool">
+                  Бассейн
+                </label>
+
+                <input type="checkbox" name="pool"
+                  id="filter-pool">
+                <label for="filter-pool" check>
+                  Парковка
+                </label>
+
+                <input type="checkbox" name="pool"
+                  id="filter-pool">
+                <label for="filter-pool" check>
+                  Wi-Fi
+                </label>
+            </form>
+          </div>  
+
+          <div class="house-type">Тип жилья:            
+              <form class="filter" method="get" action="#">              
+                
+                  <input type="checkbox" name="pool"
+                    id="filter-pool" check>
+                  <label for="filter-pool">
+                    Гостиница
+                  </label>
+
+                  <input type="checkbox" name="pool"
+                    id="filter-pool" check>
+                  <label for="filter-pool">
+                    Мотель
+                  </label>
+                
+                  <input type="checkbox" name="pool"
+                    id="filter-pool" check>
+                  <label for="filter-pool">
+                    Апартаменты
+                  </label>              
+              </form>         
+          </div>
+          
+          <div class="price">Стоимость в сутки(р):                 
+            <label>От 0 до 3000             
+              <input type="range" name="radio">
+            </label> 
+            <button class="button-price">
+              Показать 
+            </button>           
+          </div>
           <div class="search-result">
             <h2>Найдено:</h2>
-              <ul class="Sorting">Сортировка:
-                <li><a href="#">По цене</a></li>
-                <li><a href="#">По типу</a></li>
-                <li><a href="#">По рейтингу</a></li>
-              </ul>            
+              <div class="Sorting">Сортировка:
+                <a href="#">По цене</a>
+                <a href="#">По типу</a>
+                <a href="#">По рейтингу</a>
+              </div>            
           </div>
 
 
@@ -51,8 +97,8 @@
                   <div class="result-text">
                     <h3>Amara resort & spa</h3>
                       <p>Гостиница от 3500Р.</p>
-                      <a href="#">Подробнее</a>
-                      <a href="#">Забронировать</a>
+                      <button class="more-info">Подробнее</button>
+                      <button class="reserve">Забронировать</button>
                   </div>
                     <div class="rating">
                       <p>Рейтинг:8.5</p>
@@ -66,8 +112,8 @@
                   <div class="result-text">
                     <h3>Desert quail inn</h3>
                       <p>Мотель от 2000Р.</p>
-                      <a href="#">Подробнее</a>
-                      <a href="#">Забронировать</a>
+                      <button class="more-info">Подробнее</button>
+                      <button class="reserve">Забронировать</button>
                   </div>
                     <div class="rating">
                       <p>Рейтинг:8.9</p>
@@ -81,8 +127,8 @@
                   <div class="result-text">
                     <h3>Villas at poco diablo</h3>
                       <p>Апартаменты от 4000Р.</p>
-                        <a href="#">Подробнее</a>
-                        <a href="#">Забронировать</a>
+                        <button class="more-info">Подробнее</button>
+                        <button class="reserve">Забронировать</button>
                   </div>
                     <div class="rating">
                       <p>Рейтинг:9.2</p>
@@ -94,12 +140,11 @@
         </div>
 
         <footer class="social-footer">
-              <p>#VISITSEDONA</p>
-                <ul>
-                  <li><a class="social-button" href="#"><img src="img/twitter.png"></a></li>
-                  <li><a class="social-button" href="#"><img src="img/facebook.png"></a></li>
-                  <li><a class="social-button" href="#"><img src="img/youtube.png"></a></li>
-                </ul>
+              <p>#VISITSEDONA</p>               
+                 <a class="social-button" href="#"><img src="img/twitter.png" alt="Твитер"></a>
+                 <a class="social-button" href="#"><img src="img/facebook.png" alt="Фейсбук"></a>
+                 <a class="social-button" href="#"><img src="img/youtube.png" alt="Ютуб"></a>                
+                
 
               <div class="copyright-footer">
                 <p>WEBSITE BY</p>
