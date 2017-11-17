@@ -3,6 +3,9 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Седона</title>
+     <link href="https://fonts.googleapis.com/css?family=PT+Sans+Narrow:400,700&amp;subset=latin,cyrillic" rel="stylesheet">
+     <link href="css/normalize.css" rel="stylesheet">
+     <link href="style.css" rel="stylesheet">
   </head>
   <body>  	
   	<div class="wrapper"> 
@@ -21,7 +24,7 @@
   	  	</header>
 
       <figure class="main-foto">      		
-      			<h2 class="visually-hidden">Картинка "Добро пожаловать в Седону"</h2>
+      			<p class="visually-hidden">Картинка "Добро пожаловать в Седону"</p>
       			<img src="img/intro.jpg" width="1200" height="565" alt="Картинка «Welcome to Sedona»">
       </figure> 
 
@@ -45,8 +48,8 @@
 
       			<div class="services">
       				<div class="services-option">
-      					<figure class="small-house">
-      					<h3 class="visually-hidden">Картинка домика</h3> 
+      					<figure class="small-option">
+      					<p class="visually-hidden">Картинка домика</p> 
       					<a href="#">     						
       						<img src="img/icon-house.png" width="75" height="72" alt="Картинка домика">  
       					</a>    						
@@ -56,8 +59,8 @@
       				</div>
 
       				<div class="services-option">
-      					<figure class="small-burger">
-      					<h3 class="visually-hidden">Картинка бургера</h3>      					
+      					<figure class="small-option">
+      					<p class="visually-hidden">Картинка бургера</p>      					
       					<a href="#1">
       						<img src="img/icon-burger.png" width="74" height="70" alt="Картинка бургера">
       					</a> 
@@ -67,8 +70,8 @@
       				</div>
 
       				<div class="services-option">
-      					<figure class="small-present">
-      					<h3 class="visually-hidden">Картинка подарка</h3>
+      					<figure class="small-option">
+      					<p class="visually-hidden">Картинка подарка</p>
       					<a href="#2">      						
       						<img src="img/icon-present.png" width="64" height="76" alt="Картинка подарка">
       					</a> 
@@ -80,7 +83,7 @@
 
 
       			<div class="reason-2">
-      				<h3 class="visually-hidden">Фото каньона</h3>
+      				<p class="visually-hidden">Фото каньона</p>
       				<figure class="foto-canyon">     					
       					<img src="img/fotocanyon.jpg" width="800" height="256" alt="Фото каньона">
       				</figure> 
@@ -106,55 +109,52 @@
       			</div>
 
 
-      		<footer class="main-footer">
-      			<div class="back-footer">
+  				<div class="search">
+  					<a href="#">Поиск гостиницы в седоне</a>
+  					 <label>
+  					 	Дата заезда:      					 		
+  					 	<input type="date" name="calendar"> 					 	   					 		
+  					 </label>
+  					 <label>
+  					 	Дата выезда:
+  					 	<input type="date" name="calendar">
+  					 </label>
+  					 <label>
+  					 	Взрослые:
+  					 	<input type="number" name="quantity" min="1" max="5"> 
+  					 </label> 
+  					 <label>
+  					 	Дети:
+  					 	<input type="number" name="quantity" min="1" max="5">
+  					 </label> 
+  					 <button class="button-find">
+  					 	Найти
+  					 </button>    					 	      					 
+  				</div>
+
+
+      			<div class="google-map">
       				<h2>Заинтересовались?</h2>
       					<p>Укажите предполагаемые даты поездки, и мы покажем вам лучшие педложения гостиниц в седоне</p>
-      					 <h2 class="visually-hidden">Гугл карта</h2> 
+      					 <p class="visually-hidden">Гугл карта</p> 
       						<figure class="map">
       							<img src="img/map.jpg" width="1200" height="593" alt="Гугл Карта">
-      						</figure> 
+      						</figure>
       			</div>
 
-      				<div class="search-footer">
-      					<p>Поиск гостиницы в седоне</p>
-      					 <label>
-      					 	Дата заезда:      					 		
-      					 	<input type="date" name="calendar">     					 		
-      					 </label>
-      					 <label>
-      					 	Дата выезда:
-      					 	<input type="date" name="calendar">
-      					 </label>
-      					 <label>
-      					 	Взрослые:
-      					 	<input list="amount-adult">
-      					 </label> 
-      					 <label>
-      					 	Дети:
-      					 	<input list="amount-child">
-      					 </label> 
-      					 <button class="button-find">
-      					 	Найти
-      					 </button>    					 	      					 
-      				</div>
-
-
-      			<div class="social-footer">
+      			<footer class="social-footer">
       				<h2 class="visually-hidden">Контакты</h2>
       				<p>#VISITSEDONA</p>
-      						<h3 class="visually-hidden">Твитер</h3><a class="social-button" href="#"><img src="img/twitter.png" alt="Твитер"></a>
-      						<h3 class="visually-hidden">Фейсбук</h3><a class="social-button" href="#"><img src="img/facebook.png" alt="Фейсбук"></a>
-      						<h3 class="visually-hidden">Ютуб</h3><a class="social-button" href="#"><img src="img/youtube.png" alt="Ютуб"></a>      					
+						<p class="visually-hidden">Твитер</p><a class="social-button" href="#">Twitter</a>
+						<p class="visually-hidden">Фейсбук</p><a class="social-button" href="#">Facebook</a>
+						<p class="visually-hidden">Ютуб</p><a class="social-button" href="#">YouTube</a>     
       				<div class="copyright-footer">
       					<p>WEBSITE BY</p>
       						<figure class="academy">
-      							<h3 class="visually-hidden">Логотип академии</h3><img src="img/logo_name.svg" width="115" height="41" alt="Логотип html academy">
+      							<p class="visually-hidden">Логотип академии</p><img src="img/logo_name.svg" width="115" height="41" alt="Логотип html academy">
       						</figure>      			
       				</div>	
-      			</div>
-      		</footer> 
-      		
+      			</footer>      		 
     </div>
   </body>
 </html>
