@@ -5,7 +5,7 @@
     <title>HTML Academy: Седона</title>
      <link href="https://fonts.googleapis.com/css?family=PT+Sans+Narrow:400,700&amp;subset=latin,cyrillic" rel="stylesheet">
      <link href="css/normalize.css" rel="stylesheet">
-     <link href="style.css" rel="stylesheet">
+     <link href="css/style.css" rel="stylesheet">
   </head>
   <body>  	
   	<div class="wrapper"> 
@@ -29,16 +29,14 @@
       </figure> 
 
       	<div class="description">
-      		<h2>Седона - небольшой городок в Аризоне, заслуживающий большего!</h2>
-      	</div>
-
-     	<div class="reason-text">
-     		<p>Рассмотрим 5 причин, по которым Седона круче, чем Гранд Каньон!</p> 		
+      		<h2>Седона - небольшой городок в Аризоне,<br>заслуживающий большего!</h2>
+      		<p>Рассмотрим 5 причин, по которым Седона круче, чем Гранд Каньон!</p> 
       	</div>
 
       			<div class="reason-1">
-      				<h3>Настоящий Городок</h3>
-      					<p>Седона-не аттракцион для туристов,там течет своя жизнь</p>
+      				<h3>Настоящий <br> Городок</h3>
+      					<p>-№1-</p> 
+      					<p>Седона - не аттракцион для туристов,<br>там течет своя жизнь</p>
       				<figure class="reason-1">
       					<h3 class="visually-hidden">Фото города</h3> 
       					<img src="img/cityfoto.jpg" width="800" height="256" alt="Фото города">
@@ -55,7 +53,7 @@
       					</a>    						
       					</figure>
       						<h3>Жилье</h3>
-      					  		<p>Рекомендуем пожить в настоящем мотеле,все как в кино!</p>
+      					  		<p>Рекомендуем пожить в настоящем<br>мотеле,все как в кино!</p>
       				</div>
 
       				<div class="services-option">
@@ -66,7 +64,7 @@
       					</a> 
       					</figure> 
       						<h3>Еда</h3>
-      							<p>Всегда заказывайте фирменный бургер, вы не разочаруетесь!</p>
+      							<p>Всегда заказывайте фирменный бургер,<br>вы не разочаруетесь!</p>
       				</div>
 
       				<div class="services-option">
@@ -77,7 +75,7 @@
       					</a> 
       					</figure> 
       						<h3>Сувениры</h3>
-      					  		<p> Не только китайского, но и местного производства!</p>
+      					  		<p> Не только китайского, но и местного<br>производства!</p>
       				</div>
       			</div>
 
@@ -87,55 +85,69 @@
       				<figure class="foto-canyon">     					
       					<img src="img/fotocanyon.jpg" width="800" height="256" alt="Фото каньона">
       				</figure> 
-      					<h3>Там есть мост дьявола</h3>
+      					<h3>Там есть<br>мост дьявола</h3>
+      						<p>-№2-</p>
       						<p>Да,по нему можно пройти! Если конечно вы осмелитесь</p>      					
       			</div>
 
       			<div class="reason-describe">
       				<div class="reason">
-      					<h3>Небольшая площадь</h3>
-      						<p>Все достопримечательности находятся очень близко</p>      					
+      					<h3>Небольшая<br>площадь</h3>
+      						<p>-№3-</p>
+      						<p>Все достопримечательности<br>находятся очень близко</p>      					
       				</div>
 
       				<div class="reason">
-      					<h3>Красивая дорога</h3>
-      						<p>Ехать в седону из Лас-Вегаса совсем не скучно!</p>      					      				
+      					<h3>Красивая<br>дорога</h3>
+      						<p>-№4-</p>
+      						<p>Ехать в седону из Лас-Вегаса совсем<br>не скучно!</p>      					      				
       				</div>
 
       				<div class="reason">
-      					<h3>Мало туристов</h3>
-      						<p>Большинство едет в гранд каньон и толпится там</p>      					
+      					<h3>Мало<br>туристов</h3>
+      						<p>-№5-</p>
+      						<p>Большинство едет в гранд каньон и<br>толпится там</p>      					
       				</div>
       			</div>
 
 
   				<div class="search">
-  					<a href="#">Поиск гостиницы в седоне</a>
-  					 <label>
-  					 	Дата заезда:      					 		
-  					 	<input type="date" name="calendar"> 					 	   					 		
-  					 </label>
-  					 <label>
-  					 	Дата выезда:
-  					 	<input type="date" name="calendar">
-  					 </label>
-  					 <label>
-  					 	Взрослые:
-  					 	<input type="number" name="quantity" min="1" max="5"> 
-  					 </label> 
-  					 <label>
-  					 	Дети:
-  					 	<input type="number" name="quantity" min="1" max="5">
-  					 </label> 
-  					 <button class="button-find">
-  					 	Найти
-  					 </button>    					 	      					 
+  					<a href="#">Поиск гостиницы в седоне</a> 					
+  					<div class="search-form">
+  						<form class="checkin" method="post" action="#">
+  							<p>
+  								<label for="checkin-date">Дата заезда:</label>
+  								<input type="calendar" name="date" placeholder="27 апреля 2017">
+  								<input  src="img/calendar.svg" type="image">
+  							</p>
+  							<p>
+  								<label for="checkin-date">Дата выезда:</label>
+  								<input type="calendar" name="date" placeholder="04 июля 2017">
+  								<input  src="img/calendar.svg" type="image">
+  							</p>
+  							<p>
+  								<label for="checkin-date">Взрослые:</label>
+  								<input  src="img/minus.svg" type="image">
+  								<input type="calendar" name="date" placeholder="2">
+  								<input  src="img/plus.svg" type="image">
+  							</p>
+  							<p>
+  								<label for="checkin-date">Дети:</label>
+  								<input  src="img/minus.svg" type="image">
+  								<input type="calendar" name="date" placeholder="0">
+  								<input  src="img/plus.svg" type="image">
+  							</p>
+						</form>
+  						<button type="button" class="button-find">
+  					 		Найти
+  					 	</button>
+  					</div>    					 	      					 
   				</div>
 
 
       			<div class="google-map">
       				<h2>Заинтересовались?</h2>
-      					<p>Укажите предполагаемые даты поездки, и мы покажем вам лучшие педложения гостиниц в седоне</p>
+      				<p>Укажите предполагаемые даты поездки,<br>и мы покажем вам лучшие педложения гостиниц в седоне</p>
       					 <p class="visually-hidden">Гугл карта</p> 
       						<figure class="map">
       							<img src="img/map.jpg" width="1200" height="593" alt="Гугл Карта">
@@ -144,14 +156,14 @@
 
       			<footer class="social-footer">
       				<h2 class="visually-hidden">Контакты</h2>
-      				<p>#VISITSEDONA</p>
-						<p class="visually-hidden">Твитер</p><a class="social-button" href="#">Twitter</a>
-						<p class="visually-hidden">Фейсбук</p><a class="social-button" href="#">Facebook</a>
-						<p class="visually-hidden">Ютуб</p><a class="social-button" href="#">YouTube</a>     
+      				<h3>#VISITSEDONA</h3>
+						<a class="visually-hidden" href="#">Twitter</a>
+						<a class="visually-hidden" href="#">Facebook</a>
+						<a class="visually-hidden" href="#">YouTube</a>     
       				<div class="copyright-footer">
       					<p>WEBSITE BY</p>
       						<figure class="academy">
-      							<p class="visually-hidden">Логотип академии</p><img src="img/logo_name.svg" width="115" height="41" alt="Логотип html academy">
+      							<a href="#">Логотип академии</a>
       						</figure>      			
       				</div>	
       			</footer>      		 
