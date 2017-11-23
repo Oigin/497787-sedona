@@ -1,0 +1,458 @@
+body {
+  margin: 0;
+  padding: 0;
+
+  font-family: "PT Sans", Arial, sans-serif;
+  font-size: 21px;
+  line-height: 21px;
+  font-weight: 400;
+  color: #000000;
+
+  background-color: #f2f2f2;
+  background-position: top center;
+  text-transform: uppercase;
+}
+
+.visually-hidden {
+  visibility: hidden;
+}
+
+/* 2-я страница body */ 
+.catalog-page {
+  background-color: #f2f2f2;
+  background-repeat: repeat;
+  background-position: 0 0; 
+}
+
+a {
+	text-decoration: none;
+}
+
+.information {
+	font-size: 14px;
+	line-height: 26px;
+	color: #000000; 
+	background-color: #ffffff; 
+  text-align: center;
+}
+
+.information a {
+	color: #000000;
+	font-weight: 700; 
+}
+
+.information a:hover {
+	color: #82b4d3; 
+}
+
+.information a:focus {
+	color: #b2b2b2; 
+}
+
+.description h2 {
+  text-align: center;
+  font-size: 21px;
+  line-height: 26px;
+  color: #000000;
+}
+
+.description p {
+  text-align: center;
+  font-size: 14px;
+  line-height: 26px;
+  color: #333333;
+}
+
+.description {
+  background-color: #ffffff;
+}
+
+.reason-1 {
+  background-color: #82b4d3;
+  color: #ffffff;
+}
+
+.reason-1 h3 {
+  font-size: 21px;
+  line-height: 21px;
+  font-weight: 700; 
+}
+
+.reason-1 p {
+  font-size: 14px;
+  line-height: 21px;
+}
+
+.services {
+  background-color: #ffffff;
+}
+.services-option h3 {
+  font-size: 21px;
+  line-height: 21px;
+  font-weight: 700;
+  color: #000000;
+}
+
+.services-option p {
+  font-size: 14px; 
+  line-height: 21px;
+  font-weight: 400;
+  color: #333333;
+}
+
+/* Картинка не высвечивается, что здесь не так? Пробовал уже много разных вариаций */ 
+.services-option {
+  background: url(..img/svg-sedona/icon-1.svg);
+}
+
+.reason-2 {
+  background-color: #82b4d3;
+  color: #ffffff;
+}
+
+.reason-2 h3 {
+  font-size: 21px;
+  line-height: 21px;
+  font-weight: 700; 
+}
+
+.reason-2 p {
+  font-size: 14px;
+  line-height: 21px;
+}
+
+.reason-describe { 
+  background-color: #efefef;
+  color: #ffffff;
+}
+
+.reason-describe h3 {
+  font-size: 21px;
+  line-height: 21px;
+  font-weight: 700; 
+  color: #000000;
+}
+
+.reason-describe p {
+  font-size: 14px;
+  line-height: 21px;
+  color: #333333;
+}
+
+.search {
+  background-color: #ffffff;
+  text-align: center;
+
+}
+
+.search a {
+  background-color: #766357; 
+  color: #ffffff;
+}
+
+.search label {
+  color:  #000000;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 26px;
+}
+
+.button-find {
+  background-color: #82b5d3;
+  color:  #ffffff;
+  font-size: 21px;
+  font-weight: 700;
+  line-height: 26px;   
+}
+
+.button-find p {
+  font-size: 21px;
+  font-height: 26px;
+  font-weight: 700;
+  color: #ffffff;
+  text-align: center;
+}
+
+.button-find {
+  width: 458px;
+  height: 58px;
+}
+
+.google-map {
+  background-color: #ffffff;
+}
+
+.google-map h2 {
+  color: #000000;
+  font-size: 30px;
+  font-weight: 700;
+  line-height: 36px;
+  text-align: center;
+}
+
+.google-map p {
+  color: #333333;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 24px;
+  text-align: center;
+}
+
+input {
+  background-color: #f3f3f3;
+}
+
+footer {
+  background-color: #ffffff;
+}
+
+.social-footer h3 {
+  color: #000000;
+  font-size: 21px;
+  font-weight: 700;
+  line-height: 26px;
+}
+
+.copyright-footer p {
+  color: #000000;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 26px;  
+}
+
+
+/*_______ 2-я страница разметка______________________*/ 
+.filters {
+  background-image: url(../img/background.jpg); 
+  width: 1200px;
+  height: 562px;
+} 
+
+.filters fieldset {
+  border: none;
+}
+
+.filters legend {
+  color:  #ffffff;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 21px;
+}
+
+.filters label {
+  color:  #ffffff;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 21px;
+}
+
+.filter-option {
+  list-style: none;
+}
+
+.price button {
+  color:  #ffffff;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 21px;
+}
+
+.price button {
+  width: 137px;
+  height: 36px;
+  background: rgba(255,245,215,0);
+}
+
+.search-result h2 {
+  color:  #000000;
+  font-size: 21px;
+  font-weight: 700;
+  line-height: 26px;
+  text-align: left;
+}
+
+.search-result {
+  background-color: #fefefe;
+}
+
+.hotel-item {
+  background-color: #fefefe;
+}
+.sorting {
+  color:  #000000;
+  font-size: 11.99px;
+  font-weight: 400;
+  line-height: 5.135px;
+}
+
+.result-hotel {
+  list-style: none;
+}
+
+.result-hotel p {
+  color:  #666666;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 21px;
+  
+}
+
+.result-text h3 {
+  color:  #000000;
+  font-size: 21px;
+  font-weight: 700;
+  line-height: 26px;
+}
+
+.result-text p {
+  color:  #333333;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 21px;
+}
+
+.result-text button {
+  color:  #ffffff;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 21px;
+}
+
+.more-info {
+  background-color: #81b3d2;
+  width: 110px;
+  height: 27px;
+}
+
+.reserve {
+  background-color: #766357; 
+  width: 142px;
+  height: 27px;
+}
+
+
+/*_________Сетка 1-я страница_________*/
+
+.header {
+  margin-bottom: 60px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.main-header-logo {
+  width: 138px;
+  height: 70px; 
+  position: absolute;
+}
+
+.information {
+  width: 1200px;
+  min-height: 56px;
+  margin: 0px;
+  padding: 0px;
+  list-style: none;
+}
+
+.information {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.main-foto {
+  width: 1200px;
+  margin: auto;
+  position: relative;
+  top: -100px;
+}
+
+.description {
+  width: 1200px;
+  margin: auto;
+  padding-top: 60px;
+  padding-bottom: 60px;
+  position: relative;
+  top: -105px;
+}
+
+.reason-1 {
+  width: 1200px;
+  margin: auto;
+}
+
+.reason-1 {
+  display: flex;
+}
+
+.reason-text {
+  width: 400px;
+  text-align: center;
+}
+
+.services {
+  width: 1200px;
+  min-height: 331px;
+}
+
+.services {
+  display: flex;
+  justify-content: space-between;
+  margin: auto;
+  align-items: center;
+  text-align: center;
+}
+
+.reason-2 {
+  width: 1200px;
+  min-height: 255px;
+  margin: auto;
+}
+
+.reason-2 {
+  display: flex;
+}
+
+.reason-describe {
+  width: 1200px;
+  min-height: 256px;
+  margin: auto;
+}
+
+.reason-describe {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+}
+
+.search {
+  width: 568px;
+  min-height: 481px;
+  margin: auto; 
+}
+
+.search {
+  position: relative;
+  bottom: -50px;
+}
+
+.search-form {
+  width: 568px;
+  min-height: 395px;
+  margin: auto;
+}
+
+.search-form {
+  position: relative;
+  top: 100px;
+}
+
+.google-map {
+  width: 1200px;
+  margin: auto;
+}
+
+

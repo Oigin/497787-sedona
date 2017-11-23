@@ -1,0 +1,66 @@
+body {
+  margin: 0;
+  padding: 0;
+
+  font-family: "PT Sans Narrow", Arial, sans-serif;
+  font-size: 21px;
+  line-height: 21px;
+  font-weight: 400;
+  color: #000000;
+
+  background-color: #f3f3f3;
+  background-position: top center;
+  text-transform: uppercase;
+}
+
+a {
+	text-decoration: none;
+}
+
+.visually-hidden {
+  position: absolute;
+  clip: rect(0 0 0 0);
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+}
+
+.information {
+	font-size: 80px;
+	line-height: 26px;
+	color: #000000; 
+	background-color: #ffffff;	
+	text-align: center; 
+}
+
+.information a {
+	color: #000000;
+	font-weight: 700; 
+
+}
+
+.information a:hover {
+	color: #81b3d2; 
+}
+
+.information a:focus {
+	color: #b2b2b2; 
+}
+
+.description h2 {
+	text-align: center;
+	font-size: 21px;
+	line-height: 26px;
+}
+
+.reason-text {
+	text-align: center;
+	font-size: 14px;
+	line-height: 26px;
+}
+
+.reason-1 {
+	background-color: #82b4b3;
+}
+
+.
