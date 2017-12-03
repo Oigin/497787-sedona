@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Седона</title>
-     <link href="https://fonts.googleapis.com/css?family=PT+Sans+Narrow:400,700&amp;subset=latin,cyrillic" rel="stylesheet">
+     <link href="https://fonts.googleapis.com/css?family=PT+Sans+Narrow:400,700&amp;subset=latin,cyrillic" rel="stylesheet" type="text/css">
      <link href="css/normalize.css" rel="stylesheet">
      <link href="css/style.css" rel="stylesheet">
   </head>
@@ -17,11 +17,11 @@
               <img src="img/logo.svg" width="138" height="70"  alt="Логотип «City of Cedona»">
             </a>
             <div class="main-navigation-wrapper"> 
-              <ul class="information">
-                <li><a href="information.html">Информация</a></li>
-                <li class="foto-video-link"><a href="foto-video.html">Фото и видео</a></li>
-                <li class="map-link"><a href="map.html">Карта штата</a></li>
-                <li><a href="catalog.html">Гостиницы</a></li>   
+              <ul class="navigation">
+                <li><a href="index.html">Информация</a></li>
+                <li><a href="foto-video.html">Фото и видео</a></li>
+                <li><a href="map.html">Карта штата</a></li>
+                <li class="selected"><a href="catalog.html">Гостиницы</a></li>   
               </ul>
             </div>              
           </div>
@@ -34,21 +34,21 @@
                 <legend>Инфраструктура:</legend>
                   <ul>
                     <li class="filter-option">           
-                      <input class="filter-input filter-input-checkbox" type="checkbox" name="pool"
+                      <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="pool"
                         id="filter-pool" checked>
                       <label for="filter-pool">
                         Бассейн
                       </label>
                     </li>
                     <li class="filter-option"> 
-                      <input class="filter-input filter-input-checkbox" type="checkbox" name="parking"
+                      <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="parking"
                         id="filter-parking" check>
                       <label for="filter-parking">
                         Парковка
                       </label>
                     </li>
                     <li class="filter-option">
-                      <input class="filter-input filter-input-checkbox" type="checkbox" name="wifi"
+                      <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="wifi"
                         id="filter-wifi" check>
                       <label for="filter-wifi">
                         Wi-Fi                    
@@ -60,21 +60,21 @@
                 <legend>Тип жилья:</legend> 
                   <ul>
                     <li class="filter-option">           
-                      <input class="filter-input filter-input-checkbox" type="checkbox" name="hotel"
+                      <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="hotel"
                         id="filter-hotel" checked>
                       <label for="filter-hotel">
                         Гостиница
                       </label>
                     </li>
                     <li class="filter-option"> 
-                      <input class="filter-input filter-input-checkbox" type="checkbox" name="motel"
+                      <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="motel"
                         id="filter-motel" checked>
                       <label for="filter-motel">
                         Мотель
                       </label>
                     </li>
                     <li class="filter-option">
-                      <input class="filter-input filter-input-checkbox" type="checkbox" name="apartaments"
+                      <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="apartaments"
                         id="filter-apartaments" checked>
                       <label for="filter-apartaments">
                         Апартаменты                    
@@ -82,17 +82,21 @@
                     </li>
                   </ul>
               </fieldset>
-              <fieldset class="price">               
-                  <legend>Стоимость в сутки(р):</legend> 
-                    <p class="visually-hidden">Шкала стоимости</p>                
-                    <label>            
-                      <input type="range" name="radio" min="0" max="3000">
-                      От 0 до 3000 
-                    </label> 
-                    <button type="button" class="button-price">
-                      Показать 
-                    </button>              
-              </fieldset>              
+              <div class="filter-range">
+                <div class="filter-range-title">Стоимость в сутки (р):</div>
+                  <div class="price-controls">
+                    <label class="min-price">от <input type="text" name="min-price" value="0"></label>
+                    <label class="max-price">до <input type="text" name="max-price" value="3000"></label>
+                  </div>
+                <div class="range-controls">
+                  <div class="scale">
+                    <div class="bar"></div>
+                  </div>
+                    <div class="range-toggle range-toggle-min"></div>
+                    <div class="range-toggle range-toggle-max"></div>
+                </div>
+                  <button class="btn-transparent" type="submit">Показать</button>
+              </div>              
             </form>         
           </div>
 
@@ -107,8 +111,14 @@
                       <a href="#">По рейтингу</a>
                     </div>
                       <div class="sorting-by-updown">
-                        <a href="#">Сортировать по возрастанию</a>
-                        <a href="#">Сортировать по убыванию</a>
+                        <a class="icon-up" href="#">
+                          <p class="visually-hidden">Сортировать по возрастанию</p>
+                            <img src="#">   
+                        </a>
+                        <a class="icon-down" href="#">
+                          <p class="visually-hidden">Сортировать по убыванию</p>
+                            <img src="#">
+                        </a>
                       </div>
                 </div>
             </div>            
@@ -124,16 +134,35 @@
                     <img src="img/result-1.jpg" width="135" height="90" alt="Фото">
                   </figure>
                     <div class="result-text">
-                      <h3>Amara resort & spa</h3>
+                      <a href="#">
+                        <h3>Amara resort & spa</h3>
+                      </a>
                         <p>Гостиница &nbsp;&nbsp; &nbsp; &nbsp; от 4000Р.</p>
                           <div class="result-button">
-                            <button type="button" class="more-info">Подробнее</button>
-                              <button type="button" class="reserve">Забронировать</button>
+                            <button class="more-info" type="button">
+                              <p>Подробнее</p>
+                            </button>
+                            <button class="reserve" type="button">
+                              <p>Забронировать</p>
+                            </button>
                           </div>
                     </div>
-                      <div class="raiting-amara">
-                        <img src="#" alt="Звездочки"> 
-                          <p>Рейтинг:8.5</p>
+                      <div class="raiting">
+                        <div class="stars">
+                          <span class="star">
+                            <img src="#"> 
+                          </span>
+                          <span class="star">
+                            <img src="#"> 
+                          </span>
+                          <span class="star">
+                            <img src="#"> 
+                          </span>
+                          <span class="star">
+                            <img src="#"> 
+                          </span>
+                        </div>
+                          <p>Рейтинг: 8,5</p>
                       </div> 
                 </li>
 
@@ -143,16 +172,32 @@
                     <img src="img/result-2.jpg" width="135" height="90" alt="Фото">
                   </figure>
                     <div class="result-text">
-                      <h3>Desert quail inn</h3>
+                      <a href="#">
+                        <h3>Desert quail inn</h3>
+                      </a>
                         <p>Мотель &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; от 3000Р.</p>
                         <div class="result-button">
-                            <button type="button" class="more-info">Подробнее</button>
-                              <button type="button" class="reserve">Забронировать</button>
+                            <button type="button" class="more-info">
+                              <p>Подробнее</p>
+                            </button>
+                            <button type="button" class="reserve">
+                              <p>Забронировать</p>
+                            </button>
                           </div>
                     </div>
-                      <div class="raiting-desert">
-                        <img src="#" alt="Звездочки"> 
-                          <p>Рейтинг:8.9</p>  
+                      <div class="raiting">
+                        <div class="stars-desert">
+                          <span class="star">
+                            <img src="#"> 
+                          </span>
+                          <span class="star">
+                            <img src="#"> 
+                          </span>
+                          <span class="star">
+                            <img src="#"> 
+                          </span>
+                        </div>
+                          <p>Рейтинг: 8,9</p>  
                       </div>           
                </li>
 
@@ -162,16 +207,29 @@
                     <img src="img/result-3.jpg" width="135" height="90" alt="Фото">
                   </figure>
                     <div class="result-text">
-                      <h3>Villas at poco diablo</h3>
+                      <a href="#">
+                        <h3>Villas at poco diablo</h3>
+                      </a>
                         <p>Апартаменты&nbsp;&nbsp;&nbsp;от 2000Р.</p>
                           <div class="result-button">
-                            <button type="button" class="more-info">Подробнее</button>
-                              <button type="button" class="reserve">Забронировать</button>
+                            <button type="button" class="more-info">
+                              <p>Подробнее</p>
+                            </button>
+                            <button type="button" class="reserve">
+                              <p>Забронировать</p>
+                            </button>
                           </div>
                     </div>
-                      <div class="raiting-villas">
-                        <img src="#" alt="Звездочки">
-                          <p>Рейтинг:9.2</p> 
+                      <div class="raiting">
+                        <div class="stars-villas">
+                          <span class="star">
+                            <img src="#"> 
+                          </span>
+                          <span class="star">
+                            <img src="#"> 
+                          </span>
+                        </div>
+                          <p>Рейтинг: 9,2</p> 
                       </div>     
                 </li>             
               </ul>
@@ -181,17 +239,22 @@
         <footer class="social-footer">
               <h2 class="visually-hidden">Контакты</h2>
               <h3>#VISITSEDONA</h3>
-                <a href="#">Twitter
-                  <p class="visually-hidden">Twitter</p>
-            </a>
-            <a href="#">Facebook
-                  <p class="visually-hidden">Facebook</p>
-            </a>
-            <a href="#">YouTube
-                  <p class="visually-hidden">YouTube</p>
-            </a>   
+                <div class="social-links">
+                  <a href="#">
+                      <p class="visually-hidden">Twitter</p>
+                      <img src="img/twitter.svg" width="46" height="48">
+                  </a>
+                  <a href="#">
+                        <p class="visually-hidden">Facebook</p>
+                        <img src="img/facebook.svg" width="46" height="48">
+                  </a>
+                  <a href="#">
+                        <p class="visually-hidden">YouTube</p>
+                        <img src="img/youtube.svg" width="46" height="48">
+                  </a>  
+                </div> 
               <div class="copyright-footer">
-                <p>WEBSITE BY</p>
+                <p>WEBSITE BY &nbsp;</p>
                   <figure class="academy">
                     <a href="https://htmlacademy.ru/intensive/htmlcss">
                       <p class="visually-hidden">Логотип академии</p>
@@ -199,7 +262,7 @@
                     </a>
                   </figure>           
               </div>  
-            </footer>  
+        </footer>   
 
     </div>
   </body>
