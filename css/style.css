@@ -108,19 +108,65 @@ a {
 .services {
   background-color: #ffffff;
 }
-.services-option h3 {
+
+.services-option-house h3 {
   font-size: 21px;
   line-height: 21px;
   font-weight: 700;
   color: #000000;
 }
 
-.services-option p {
+.services-option-food h3 {
+  font-size: 21px;
+  line-height: 21px;
+  font-weight: 700;
+  color: #000000;
+}
+
+.services-option-presents h3 {
+  font-size: 21px;
+  line-height: 21px;
+  font-weight: 700;
+  color: #000000;
+}
+
+
+
+.services-option-house p {
   font-size: 14px; 
   line-height: 21px;
   font-weight: 400;
   color: #333333;
 }
+
+.services-option-food p {
+  font-size: 14px; 
+  line-height: 21px;
+  font-weight: 400;
+  color: #333333;
+}
+
+.services-option-presents p {
+  font-size: 14px; 
+  line-height: 21px;
+  font-weight: 400;
+  color: #333333;
+}
+
+
+.services-option-house:before {
+  content: url(../img/icon-house.png);
+}
+
+.services-option-food:before {
+  content: url(../img/icon-burger.png);
+}
+
+.services-option-presents:before {
+  content: url(../img/icon-present.png);
+}
+
+
 
 
 .reason-2 {
@@ -706,9 +752,6 @@ footer {
   color: #87b6d2;  
 }
 
-.plusminus-image:hover {
-  background-color: #604e43;
-}
 
 
 
@@ -849,21 +892,27 @@ min-height: 55px;
 figure {
   margin: 0 0 0 0 ;
 }
+
 .services {
   min-height: 330px;
 }
 
 .services {
   display: flex;
-  flex-direction: row
+  flex-direction: row;
   justify-content: space-between;
   align-items: center;
 }
 
-.services-option {
+.services-option-house,
+.services-option-food,
+.services-option-presents {
+  display: inline-flex;
+  flex-direction: column;
   width: 100%;
   text-align: center;
 }
+
 
 .reason-2 {
   width: 1200px;
@@ -1265,7 +1314,7 @@ figure {
 
 .people-amount input {
   box-sizing: border-box;
-  width: 38px;
+  width: 40px;
   height: 38px;
   padding-top: 5px;
   padding-right: 15px;
@@ -1289,18 +1338,29 @@ figure {
 }
 
 
-
-
-
-
-
-
-
-
-/* КАлендарьь*/
-.calendar-image img {
+.date {
   background-image: url(../img/calendar.svg);
+  background-repeat: no-repeat;
+  background-position: center right 10px;
 }
+
+.minus-image {
+  background-image: url(../img/minus.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.plus-image {
+  background-image: url(../img/plus.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+
+
+
+
+
 
 
 .checkin-information input {
