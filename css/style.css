@@ -327,20 +327,14 @@ footer {
   border-radius: 3px;
 }
 
+
 .filter-input-checkbox:checked + label::after {
-  content: "";
+  content: "\2714";
+  font-size: 30px;
 
   position: absolute;
   top: 0;
-  left: 5px;
-
-  width: 23px;
-  height: 20px;
-
- 
-  background-image: url("img/checkbox-on.svg");
-  background-repeat: no-repeat;
-  background-position: 0 0;
+  left: 3px;
 
 }
 
@@ -476,15 +470,19 @@ footer {
 
 .btn-transparent:hover {
   color: #000000;
-
   background: #ffffff;
 }
+
+
+
 
 
 .sorting-links a {
   color: #cbcbcb;
   border-bottom-style: dotted;
   border-color: #81b3d2;
+  border-width: 1px;
+  border-bottom: 1px dotted #81b3d2;
 }
 
 .sorting-links a:hover {
@@ -503,40 +501,31 @@ footer {
   color: #000000;
 }
 
-.sorting-by-updown {
+
+.sorting-by-updown  {
   display: flex;
+  flex-direction: row;
+  justify-content: space-around;
 }
 
 
-.icon-up img {
-  margin-left: -5px;
-  width: 0;
-  height: 0;
-  border-left: 5px solid transparent;
-  border-right: 5px solid transparent;
-  border-bottom: 10px solid #cbcbcb;
+.icon-up:before {
+ content: "\27A4";
+ position: absolute;
+ color: #cbcbcb;
+ transform: rotate(270deg);
+ font-size: 15px; 
 }
 
-.icon-down img {
-  margin-top: -1px;
-  margin-left: 20px;
-  width: 0;
-  height: 0;
-  border-left: 5px solid transparent;
-  border-right: 5px solid transparent;
-  border-top: 10px solid #cbcbcb;
-}
-.sorting-by-updown img:hover {
-  color: #000000; 
+.icon-down:after {
+ content: "\27A4";
+ position: absolute;
+ right: 70px;
+ color: #81b3d2;
+ transform: rotate(90deg);
+ font-size: 15px; 
 }
 
-.sorting-by-updown img:active {
-  background-color: #82b5d3; 
-}
-
-.sorting-by-updown img:actived {
-  background-color: #82b5d3; 
-}
 
 
 
@@ -611,7 +600,7 @@ footer {
 
 .star:after {
  content: "\2605";
- position:absolute;
+ position: absolute;
  color: #82b5d3;
 }
 
@@ -708,8 +697,6 @@ footer {
 }
 
 
-
-
 .search-form button:hover {
   background-color: #669fc2;
 }
@@ -718,6 +705,16 @@ footer {
   background-color: #5397be;
   color: #87b6d2;  
 }
+
+.plusminus-image:hover {
+  background-color: #604e43;
+}
+
+
+
+
+
+
 
 
 
@@ -787,26 +784,26 @@ min-height: 55px;
 } 
 
 .navigation li { 
-margin-top: 15px; 
-margin-bottom: 15px; 
--ms-flex-item-align: center; 
-align-self: center; 
-width: 240px; 
-list-style: none; 
+  margin-top: 15px; 
+  margin-bottom: 15px; 
+  -ms-flex-item-align: center; 
+  align-self: center; 
+  width: 240px; 
+  list-style: none; 
 } 
 
 .navigation li:nth-child(1), 
 .navigation li:nth-child(2) { 
-text-align: left; 
+  text-align: left; 
 } 
 
 .navigation li:nth-child(3), 
 .navigation li:nth-child(4) { 
-text-align: right; 
+  text-align: right; 
 } 
 
 .navigation li:nth-child(3n) { 
-margin-left: auto; 
+  margin-left: auto; 
 } 
 
 .main-foto { 
@@ -989,7 +986,7 @@ figure {
   display: flex;
   justify-content: space-around;
   align-items: center;
-  max-height: 120px;
+  
   bottom: 0;
   position: absolute;
   z-index: 10;
@@ -1009,6 +1006,13 @@ figure {
   margin-right: 0;
   margin-bottom: 0;
   margin-left: 0;
+}
+
+
+ 
+.social-footer-inner {
+  bottom: -120px;
+  background-color: #ffffff; 
 }
 
 
@@ -1116,7 +1120,6 @@ figure {
 
 .hotel-item ul {
   width: 1200px;
-  min-height: 540px;
 }
 
 .hotel-item ul {
@@ -1235,14 +1238,20 @@ figure {
 
 .date {
   box-sizing: border-box;
-  width: 346px;
+  width: 335px;
   height: 38px;
+  margin-right: -3px;
   padding-top: 10px;
-  padding-right: 200px;
   padding-bottom: 10px;
   padding-left: 10px;
 }
 
+.people-amount {
+  display: flex;
+  justify-content: space-between;
+  width: 458px;
+  margin: 0 auto;
+}
 
 .people-amount p {
   display: inline-flex;
@@ -1264,6 +1273,15 @@ figure {
   padding-left: 15px;
 }
 
+.people-amount 
+.checkin-information label {
+  margin: 0 35px 0 0;
+}
+
+.dates 
+.checkin-information label {
+  margin-right: 7px;
+}
 
 
 .search-form input {
@@ -1271,13 +1289,18 @@ figure {
 }
 
 
-.calendar-image {
-  position: absolute;
-  margin-top: -30px;
-  margin-left: 200px;
+
+
+
+
+
+
+
+
+/* КАлендарьь*/
+.calendar-image img {
+  background-image: url(../img/calendar.svg);
 }
-
-
 
 
 .checkin-information input {
