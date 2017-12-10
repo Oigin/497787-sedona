@@ -246,6 +246,12 @@ footer {
   line-height: 26px;  
 }
 
+.twitter {
+  background-image: url(../img/twitter.svg);
+}
+
+
+
 
 /*_______ 2-я страница разметка______________________*/ 
 .filters {
@@ -729,7 +735,7 @@ footer {
 .search-link:hover {
   background-color: #604e43;
 }
-.search-link a:active {
+.search-link p:active {
   background-color: #604e43;
   color: #857871;  
 }
@@ -960,7 +966,7 @@ figure {
   background-color: #766357; 
 }
 
-.search-link a {
+.search-link p {
   color: #ffffff;
 }
 
@@ -1277,40 +1283,15 @@ figure {
   min-height: 180px;
 }
 
-.dates {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-
 
 .date {
   box-sizing: border-box;
   width: 335px;
   height: 38px;
-  margin-right: -3px;
   padding-top: 10px;
   padding-bottom: 10px;
   padding-left: 10px;
 }
-
-.people-amount {
-  display: flex;
-  justify-content: space-between;
-  width: 458px;
-  margin: 0 auto;
-}
-
-.people-amount p {
-  display: inline-flex;
-}
-
-
-.people-amount input {
-  margin-top: -5px;
-}
-
 
 .people-amount input {
   box-sizing: border-box;
@@ -1322,35 +1303,45 @@ figure {
   padding-left: 15px;
 }
 
-.people-amount 
-.checkin-information label {
-  margin: 0 35px 0 0;
-}
-
-.dates 
-.checkin-information label {
-  margin-right: 7px;
-}
-
 
 .search-form input {
   text-transform: uppercase;  
 }
 
 
-.date {
+
+.date-image:after {
+  content: "";
+  display: inline-block;
+  position: absolute;
+  top: 8px;
+  right: 5px;
+
+
+  width: 21px;
+  height: 22px;
+
   background-image: url(../img/calendar.svg);
-  background-repeat: no-repeat;
-  background-position: center right 10px;
+  background-repeat: no-repeat; 
 }
 
 .minus-image {
+  border: 0;
+  width: 38px;
+  height: 38px;
+  background-color: #f3f3f3;
+
   background-image: url(../img/minus.svg);
   background-repeat: no-repeat;
   background-position: center;
 }
 
 .plus-image {
+  border: 0;
+  width: 38px;
+  height: 38px;
+  background-color: #f3f3f3;
+
   background-image: url(../img/plus.svg);
   background-repeat: no-repeat;
   background-position: center;
@@ -1360,8 +1351,43 @@ figure {
 
 
 
+.dates {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
 
 
+.checkin-date {
+  display: inline-flex;
+}
+
+.people-amount p {
+  display: inline-flex;
+  flex-direction: row;
+  justify-content: space-around;
+
+  margin-right: 10px;
+  margin-left: 20px;
+}
+
+.people-amount label {
+  margin-right: 35px;
+  margin-left: -10px;
+}
+
+.dates label {
+  margin-right: 5px;
+}
+
+
+
+
+
+.checkin-information {
+  display: block;
+  position: relative;
+}
 
 .checkin-information input {
   color:  #000000;

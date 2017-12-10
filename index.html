@@ -106,33 +106,35 @@
 
 
   				<div class="search">
-  					<div class="search-link">
-  						<a href="#">Поиск гостиницы в седоне</a>
-  					</div> 					
+  					<a class="search-link" href="form.html">
+  						<p>Поиск гостиницы в седоне</p>
+  					</a> 					
   					<div class="search-form">
   						<form class="checkin-form" method="post" action="#">
   							<div class="dates">
 	  							<p class="checkin-information">
 	  								<label for="checkin-date">Дата заезда:</label>
-	  								<input class="date" type="calendar" name="date" placeholder="27 апреля 2017">
+	  								<input class="date"  type="text" name="date" placeholder="27 апреля 2017">
+	  									<span class="date-image"></span>
 	  							</p>
 	  							<p class="checkin-information">
 	  								<label for="checkin-date">Дата выезда:</label>
-	  								<input class="date" type="calendar" name="date" placeholder="04 июля 2017">
+	  								<input class="date"  type="text" name="date" placeholder="04 июля 2017">
+	  									<span class="date-image"></span>
 								</p>
 	  						</div>
 	  						<div class="people-amount">
 	  							<p class="checkin-information">
 	  								<label  for="checkin-date">Взрослые:</label>
-	  								<input 	class="minus-image" type="button">
+	  								<button	class="minus-image" type="button"></button>
 	  								<input  type="text" name="date" placeholder="2">
-	  								<input  class="plus-image" type="button">
+	  								<button class="plus-image" type="button"></button> 
 	  							</p>
 	  							<p class="checkin-information">
 	  								<label for="checkin-date">Дети:</label>
-	  								<input class="minus-image" type="button">
+	  								<button class="minus-image" type="button"></button>
 	  								<input type="text" name="date" placeholder="0">
-	  								<input class="plus-image" type="button">
+	  								<button class="plus-image" type="button"></button>
 	  							</p>
 	  						</div>
 						</form>
@@ -158,17 +160,14 @@
       				<h2 class="visually-hidden">Контакты</h2>
       				<h3>#VISITSEDONA</h3>
       					<div class="social-links">
-	      					<a href="#">
-	      							<p class="visually-hidden">Twitter</p>
-	      							<img src="img/twitter.svg" width="46" height="48">
+	      					<a class="twitter" href="#">
+	      						<p class="visually-hidden">Twitter</p>
 							</a>
 							<a href="#">
 	      						<p class="visually-hidden">Facebook</p>
-	      						<img src="img/facebook.svg" width="46" height="48">
 							</a>
 							<a href="#">
 	      						<p class="visually-hidden">YouTube</p>
-	      						<img src="img/youtube.svg" width="46" height="48">
 							</a>  
 						</div> 
       				<div class="copyright-footer">
